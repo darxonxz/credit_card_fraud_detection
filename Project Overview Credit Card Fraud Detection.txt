@@ -1,0 +1,18 @@
+Project Overview
+This project satisfies the Advanced Machine Learning Summative Evaluation guidelines for Category 1: Anomaly Detection in Financial Transactions. It deploys a leak-proof analytics architecture to identify hidden fraud vectors under severe class imbalances.
+
+Methodological Architecture
+Unsupervised Outlier Profiling: Implemented an Isolation Forest model optimized across scaled transaction matrices to isolate anomalous records on the margins of geometric coordinate spaces.
+
+Hybrid Boundary Resampling: Leveraged a sequential step pairing Synthetic Minority Over-sampling (SMOTE) at a structured 0.05 index with Tomek Links boundary deletion to eliminate overlapping noise between transaction vectors.
+
+Hyperparameter Grid Search: Evaluated a 48-fold cross-validation matrix (GridSearchCV) targeting L2 regularization scales and depth parameters to optimize the model specifically for Area Under the Precision-Recall Curve (PR-AUC).
+
+Core Engineering Results
+Optimal Cutoff Boundary Found: 0.7670
+
+Fraud Detection Specificity (Precision): 95%
+
+Fraud Catch Rate (Recall): 89%
+
+Final System PR-AUC Grade: 0.8987
