@@ -20,31 +20,28 @@ This project satisfies the Advanced Machine Learning Summative Evaluation guidel
 ```text
               precision    recall  f1-score   support
 
-  Legitimate       1.00      1.00      1.00     56864
-       Fraud       0.32      0.33      0.32        98
+  Legitimate       1.00      1.00      1.00     56651
+       Fraud       0.18      0.16      0.17        95
 
-    accuracy                           1.00     56962
-   macro avg       0.66      0.66      0.66     56962
-weighted avg       1.00      1.00      1.00     56962
+    accuracy                           1.00     56746
+   macro avg       0.59      0.58      0.58     56746
+weighted avg       1.00      1.00      1.00     56746
 ```
 
-Isolation Forest Baseline PR-AUC: 0.1056
+Isolation Forest Baseline PR-AUC: 0.0296
 
 ```text
 **TECHNIQUE 2: GRIDSEARCH TUNED GRADIENT BOOSTING + SMOTE**
               precision    recall  f1-score   support
+  Legitimate       1.00      1.00      1.00     56651
+       Fraud       0.92      0.77      0.84        95
 
-  Legitimate       1.00      1.00      1.00     56864
-       Fraud       0.97      0.87      0.91        98
-
-    accuracy                           1.00     56962
-   macro avg       0.98      0.93      0.96     56962
-weighted avg       1.00      1.00      1.00     56962
+    accuracy                           1.00     56746
+   macro avg       0.96      0.88      0.92     56746
+weighted avg       1.00      1.00      1.00     56746
 ```
+Supervised Engine Optimized PR-AUC: 0.8162
 
-Supervised Engine Optimized PR-AUC: 0.8945
-
-Selected Optimal Hyperparameters: 
 ```python
-{'classifier__l2_regularization': 1.0, 'classifier__learning_rate': 0.1, 'classifier__max_depth': 6, 'classifier__max_iter': 150}
+Selected Optimal Hyperparameters: {'classifier__l2_regularization': 5.0, 'classifier__learning_rate': 0.1, 'classifier__max_depth': 6, 'classifier__max_iter': 150}
 ```
