@@ -1,3 +1,11 @@
+# Credit Card Fraud Detection (Adv ML - Anomaly Detection)
+
+github_link = https://github.com/darxonxz/credit_card_fraud_detection
+
+data_link = https://raw.githubusercontent.com/nsethi31/Kaggle-Data-Credit-Card-Fraud-Detection/master/creditcard.csv
+
+Project_drive_link = https://drive.google.com/drive/folders/13oL1iZxX36QL3niYQnyZ2g5EPbaumGtf?usp=drive_link
+
 #**Project Summary**
 ---
 
